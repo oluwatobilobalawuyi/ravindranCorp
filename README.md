@@ -1,4 +1,3 @@
-# ravindrancorp
 # Ravindran Corp - Premier League Database Overview
 
 ## About
