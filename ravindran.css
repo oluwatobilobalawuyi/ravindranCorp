@@ -1,0 +1,150 @@
+/* Font Faces */
+@font-face {
+    font-family: 'Arsenica Antiqua';
+    src: url('fonts/ArsenicaAntiqua-Regular.woff2') format('woff2'),
+         url('fonts/ArsenicaAntiqua-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Arsenica Antiqua', serif;
+    color: #f1f1f1;
+    line-height: 1.6;
+    background-color: #004d40;
+    background-image: linear-gradient(rgba(144, 238, 144, 0.5), rgba(144, 238, 144, 0.5)), 
+                      url('stadium-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Headers */
+.header, .nav {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 100, 0, 0.7);
+    border-radius: 8px;
+    color: #d4af37;
+}
+
+h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Navigation */
+.nav-button {
+    background-color: #006400; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Larger font size for readability */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-button:hover, .nav-button:focus {
+    background-color: #004d40; /* Darker shade on hover/focus */
+    color: #d4af37; /* Change text color on hover/focus */
+}
+
+nav form {
+    text-align: center; /* Center the buttons */
+}
+
+/* Tables */
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #006400;
+    color: #ffffff;
+}
+
+td {
+    background-color: #f0f4f7;
+    color: #333;
+}
+
+/* Grid System */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.team {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #c5b358;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 100%;
+    width: 100%;
+}
+
+.team img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team img:hover {
+    transform: scale(1.1);
+}
+
+.team-name {
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.team:hover .team-name {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
