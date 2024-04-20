@@ -37,7 +37,7 @@ try {
         $noMinerals = $noMinerals->fetchAll();
     }
 
-    // Always fetch premium players as they are not filtered by TeamPos
+//Premium players will show regardless and not specific data because it is a view
     $premiumPlayers = $pdo->query("SELECT * FROM premiumplayers ORDER BY Goals DESC, Assists DESC")->fetchAll();
 
 } catch (PDOException $e) {
