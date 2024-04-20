@@ -16,6 +16,7 @@ $roughians = [];
 $whyAreYouRunning = [];
 $lessDisciplined = [];
 
+//Error handling to pull information from Roughians hyAreYouRunning and LessDisciplined tables
 try {
     $pdo = new PDO($dsn, $user, $pass, $options);
 
