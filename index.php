@@ -12,6 +12,7 @@ $options = [
     PDO::ATTR_EMULATE_PREPARES => false,
 ];
 
+//The error handling code to pull the info from the database
 try {
     $pdo = new PDO($dsn, $user, $pass, $options);
     $stmt = $pdo->query('SELECT * FROM PremierLeague23 ORDER BY TeamPosition');
