@@ -4,14 +4,14 @@
 The Ravindran Corp project is designed to provide comprehensive statistics from the Premier League, focusing on player performance, team standings, and detailed football metrics. This repository contains all the necessary files to deploy and manage a dynamic database and web interface that caters to football enthusiasts, analysts, and anyone interested in in-depth football data.
 
 ## Authors
-- **Oluwatobiloba Lawuyi** - Project Manager, Programmer and Researcher
+- **Oluwatobiloba Lawuyi** - Project Manager, Database Programmer and Researcher
 - **Kelechi Onyewuenyi** - Database Programmer
 - **Wali Siddiqui** - Database Programmer
 - **Christian Earle** - Database Researcher
 - **London Thompson** - Technical Writer
 
 ## Creation Date
-- **2024**
+- **Spring 2024**
 
 ## Repository Structure
 ### Files
