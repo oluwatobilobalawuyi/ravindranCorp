@@ -43,6 +43,7 @@ Navigate to `index.php` on your deployed server to interact with the system. Uti
 
 ## Acknowledgments
 This project was developed as part of the Database Management course at Prairie View A&M University, under the guidance of Dr. Mary Kim.
+This database is named after Ravindran Iyengar who greatly influenced all the authors of this project through his extremely lovable character.
 
 ## Contact
 For more information contact lawuyioluwatobiloba@gmail.com
